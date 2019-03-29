@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-       <title>Aileen C</title>
-       <meta name="viewport" content="width=device=width, initial-scale=1.0">
-       <meta charset="UTF-8">
-    </head>
-    <body>
-        <nav>
-            <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <head>
+                <title>Hello, I am Groot</title>
+                <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+                <meta name="viewport" content="width=device=width, initial-scale=1.0">
+                <meta charset="UTF-8">
+                <meta name="description" content="My resume">
+                <meta name="keywords" content="hello, intro, web developer, full stack">
+                <meta name="msapplication.config" content="http://www.traveller.com.au/content/dam/images/g/u/n/q/h/0/image.related.articleLeadwide.620x349.gunpvd.png/1488330286332.png">
+             </head>
+             <body>
+                 <header>
+                     <span class="logo">My Website</span>
+                     <a id="toggleMenu">Menu</a>
+                     <nav>
+                         <ul>
+                             <li><a href="index.html">Home</a></li>
+                             <li><a href="resume.html">Resume</a></li>
+                             <li><a href="contact.html">Contact</a></li>
+                         </ul>
+                     </nav>
+                 </header>
         
 
         <form method="POST" action="https://formspree.io/ailanigc9@gmail.com"></form>
         <input type="hidden" name="next" value="//ailani9.github.io/thanks.html">
         <input type="text" name="_gotcha" style="display:none">
+
+        <main> 
+        <h1>Contact</h1>          
             <div>
                 <label for="name">Name</label></br>
                 <input id="name" type="text" name="name">
@@ -36,6 +47,27 @@
             <div>
                 <input type="submit" value="Send">
             </div>
-                
+        </main>
+
+            <script>
+
+                    var toggleMenu = document.getElementById('toggleMenu');
+                    var nav = document.querySelector('nav');
+                    toggleMenu.addEventListener(
+                      'click',
+                      function()
+                      {
+                        if(nav.style.display=='block')
+                        {
+                          nav.style.display='none';
+                        }
+                        else
+                        {
+                          nav.style.display='block';
+                        }
+                      }
+                    );
+            </script>
+                    
     </body>
 </html>
