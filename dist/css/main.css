@@ -9,7 +9,7 @@
 
 body {
   padding: 0;
-  margin: 0; }
+  margin: 1%; }
 
 header {
   height: 50px;
@@ -55,7 +55,8 @@ main {
 #toggleMenu {
   display: none; }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 960px) 
+{
   nav {
     display: none; }
   #toggleMenu {
@@ -72,6 +73,52 @@ main {
     opacity: 0.5; }
   nav ul li a,
   nav ul li a:link,
-  nav ul li a:visited {
-    display: block;
-    border-bottom: 1px solid #777; } }
+  nav ul li a:visited 
+    {
+        display: block;
+        border-bottom: 1px solid #777; 
+    } 
+}
+
+.resume-wrapper 
+{
+    margin: 15px;
+    background-color: none;
+    
+}
+  
+.row 
+{
+    display: flex;
+    justify-content: center;
+}
+  
+.column 
+{
+    display: flex;
+    justify-content: center;
+
+}
+  
+.columnOne
+{
+    height: 100px;
+    margin-right: 40px;
+}
+  
+.columnTwo 
+{
+    height: 100px;
+    margin-right: 40px;
+}
+
+.columnCert1
+{
+    height: 100px;
+    padding: 10px;
+}
+.columnCert2
+{
+    height: 100px;
+    padding: 10px;
+}
